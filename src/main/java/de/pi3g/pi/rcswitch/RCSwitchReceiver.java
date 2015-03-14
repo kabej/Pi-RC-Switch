@@ -185,7 +185,7 @@ public class RCSwitchReceiver {
 		private int repeatCount;
 
 		public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
-//			System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = " + event.getState());
+		System.out.println(" --> GPIO PIN STATE CHANGE: " + event.getPin() + " = " + event.getState());
 
 			long time = System.nanoTime() / 1000;
 			duration = (int) (time - lastTime);
